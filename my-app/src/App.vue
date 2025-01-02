@@ -1,7 +1,10 @@
 <script setup>
 import MainButton from "./components/MainButton.vue"
 
-import Composition from "./components/Composition.vue";
+// using composition API
+import Composition from "./components/CompositionApi.vue";
+// using options API
+import OptionsApi from "./components/OptionsApi.vue";
 
 
 
@@ -13,6 +16,7 @@ const name = "fajar abdillah ahmad"
 <template>
 
     <Composition/>
+    <OptionsApi/>
 
     <h1>HELLO WELCOME TO MY LEARN VUE</h1>
     <h3>this is my first application with Vue</h3>
