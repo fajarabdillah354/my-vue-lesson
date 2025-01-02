@@ -1,6 +1,9 @@
 <script setup>
 import MainButton from "./components/MainButton.vue"
 
+import Composition from "./components/Composition.vue";
+
+
 
 // kita bisa menambahkan variabel lalu memasukakkannya ke dalam tag template dan memanggillnya di dalam  {{ name }}  dengna 2 kurung kurawal
 //dengan kata lain kita bisa menambahkan logic apapun yang kita mau
@@ -8,6 +11,9 @@ const name = "fajar abdillah ahmad"
 </script>
 
 <template>
+
+    <Composition/>
+
     <h1>HELLO WELCOME TO MY LEARN VUE</h1>
     <h3>this is my first application with Vue</h3>
     <p>{{ name }}</p>
