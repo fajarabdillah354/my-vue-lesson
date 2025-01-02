@@ -1,9 +1,13 @@
 <script setup>
+// import CompositionApi from "./components/CompositionApi.vue";
 import MainButton from "./components/MainButton.vue"
 
 // using composition API
-import Composition from "./components/CompositionApi.vue";
-// using options API
+// import Composition from "./components/CompositionApi.vue";
+
+
+
+// using options API, dengan tipi local scope
 import OptionsApi from "./components/OptionsApi.vue";
 
 
@@ -14,8 +18,10 @@ const name = "fajar abdillah ahmad"
 </script>
 
 <template>
+    <!-- karna menggunakan scope global, maka kita tidak perlu import lagi di component filenya, cukup memanggil  -->
+    <CompositionApik/>
 
-    <Composition/>
+
     <OptionsApi/>
 
     <h1>HELLO WELCOME TO MY LEARN VUE</h1>
@@ -23,7 +29,9 @@ const name = "fajar abdillah ahmad"
     <p>{{ name }}</p>
     <MainButton></MainButton>
     <MainButton></MainButton>
-    <MainButton /> //kita juga bisa menggunakan self closing state
+
+    <!-- //kita juga bisa menggunakan self closing state -->
+    <MainButton />
 </template>
 
 <style scoped></style>
