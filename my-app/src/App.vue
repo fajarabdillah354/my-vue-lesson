@@ -25,7 +25,7 @@ const name = "fajar abdillah ahmad"
     <h1>HELLO WELCOME TO MY LEARN VUE</h1>
     <h3>this is my first application with Vue</h3>
     <p>{{ name }}</p>
-    <MainButton></MainButton> 
+    <MainButton></MainButton>
     <MainButton></MainButton>
 
     <!-- //kita juga bisa menggunakan self closing state -->
