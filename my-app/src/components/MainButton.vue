@@ -1,7 +1,7 @@
 <script setup>
   const buttonDisable = true
 
-  const isLoading = true
+  const isLoading = false
 
   //atau jika ada banyak value yuang harus diubah kita bisa menggunakan object
 
@@ -13,7 +13,7 @@
 
   //kita tidak bisa memasukan state kedalam data bind, misal {{ var 1 = 1}} atau  {{if (ok) { return message } }}
   //maka cukup gunakan ternery operator
-  //kita juga bisa merender function ke dalam template, 
+  //kita juga bisa merender function ke dalam template,
   const renderIsLoading = () => {
     if (isLoading) {
       return'Loading'
@@ -25,7 +25,7 @@
 </script>
 
 <template>
-    <button v-bind="buttonAttr">{{ renderIsLoading() }}</button>
+    <button>{{ renderIsLoading() }}</button>
 </template>
 
 <style scoped></style>
